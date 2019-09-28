@@ -11,24 +11,29 @@ import java.util.List;
 @Table(name = "articles")
 public class Article {
 
-    @Column(name = "tile")
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Lob
+    @Column(name = "title")
     private String title;
 
     @Column(name = "rating")
     private int rating;
 
+    @Lob
     @Column(name = "summary")
     private String summary;
 
+    @Lob
     @Column(name = "content")
     private String content;
 
+    @Lob
     @Column(name = "pic_url")
     private String picUrl;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
     @JsonIgnore
     @ManyToOne

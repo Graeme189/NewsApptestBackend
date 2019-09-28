@@ -28,20 +28,4 @@ public class NewsAppProjectApplicationTests {
 	@Test
 	public void contextLoads() {
 	}
-
-	//@Test
-	//public void canGetCategoryName(){
-		//assertEquals("Politics", getName());
-	//}
-
-
 }
-
-//	Journalist journalist = new Journalist("B", "a");
-//        journalistRepository.save(journalist);
-//
-//				Category category = new Category("Politics");
-//				categoryRepository.save(category);
-//
-//				Article article = new Article("Great news", 3, "More great news", "really great news",  journalist, "www.greatpic.com");
-//				articleRepository.save(article);
