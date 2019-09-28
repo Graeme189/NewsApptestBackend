@@ -51,7 +51,7 @@ public class Article {
         this.summary = summary;
         this.content = content;
         this.journalist = journalist;
-        //this.categories = new ArrayList<Category>();
+        this.categories = new ArrayList<Category>();
         this.picUrl = picUrl;
     }
 
@@ -121,4 +121,7 @@ public class Article {
     public void setPicUrl(String picUrl) {
         this.picUrl = picUrl;
     }
+
+    public void addCategory(Category category) { this.categories.add(category); }
+
 }

@@ -28,15 +28,22 @@ public class DataLoader implements ApplicationRunner {
 
     public void run(ApplicationArguments args) {
 
-        Journalist journalist = new Journalist( "Billy", "John");
-        journalistRepository.save(journalist);
+        Journalist journalist1 = new Journalist( "Billy", "John");
+        journalistRepository.save(journalist1);
 
-        Category category = new Category("Politics");
-        categoryRepository.save(category);
+        Category category1 = new Category("Politics");
+        categoryRepository.save(category1);
 
-        Article article = new Article("Great news", 3, "More great news", "really great news",  journalist, "www.greatpic.com");
-        articleRepository.save(article);
+        Category category2 = new Category("Sport");
+        categoryRepository.save(category2);
+
+        Article article1 = new Article("Great news", 3, "More great news", "really great news",  journalist1, "www" +
+                ".greatpic.com");
+
+        articleRepository.save(article1);
+
+        article1.addCategory(category1);
+        articleRepository.save(article1);
     }
 }
 
-//    Article(String title, int rating, String summary, String content, Journalist journalist, String picUrl)
