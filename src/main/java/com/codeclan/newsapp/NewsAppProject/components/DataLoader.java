@@ -100,10 +100,12 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(article4);
 
         article1.addCategory(category1);
-        articleRepository.save(article1);
-
         article1.addCategory(category2);
         articleRepository.save(article1);
+
+        //article1.addCategory(category2);
+        //articleRepository.save(article1);
+
 
         article2.addCategory(category3);
         articleRepository.save(article2);
