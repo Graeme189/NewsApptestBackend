@@ -7,12 +7,9 @@ import org.springframework.data.rest.core.config.Projection;
 
 import java.util.List;
 
-@Projection(name = "embedAllForJournalists", types = Article.class)
-public interface EmbedJournalistForArticle {
-    public String getTitle();
-    public int getRating();
-    public String getSummary();
-    public Journalist getJournalist();
-    public List<Category> getCategories();
-
+@Projection(name = "embedCategory", types = Journalist.class)
+public interface EmbedCategory {
+    public String getFirstName();
+    public String getLastName();
+    public List<Article> getArticles();
 }
