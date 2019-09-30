@@ -2,6 +2,7 @@ package com.codeclan.newsapp.NewsAppProject.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class Article {
     private Long id;
 
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     @Column(name = "title")
     private String title;
 
@@ -23,14 +25,17 @@ public class Article {
     private int rating;
 
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     @Column(name = "summary")
     private String summary;
 
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     @Column(name = "content")
     private String content;
 
     @Lob
+    @Type(type = "org.hibernate.type.TextType")
     @Column(name = "pic_url")
     private String picUrl;
 
