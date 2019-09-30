@@ -12,6 +12,8 @@ public interface EmbedCategoryForArticle {
     public String getTitle();
     public int getRating();
     public String getSummary();
+    public String getContent();
     public List<Category> getCategories();
+
 }
 

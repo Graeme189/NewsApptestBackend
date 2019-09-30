@@ -15,4 +15,5 @@ public interface EmbedAllForArticles {
     public String getContent();
     public Journalist getJournalist();
     public List<Category> getCategories();
+    public String getPicUrl();
 }
