@@ -160,8 +160,13 @@ public class DataLoader implements ApplicationRunner {
                 "Borders College students celebrate at graduation ceremony",
                 2,
                 "More than 160 graduates gathered at the Borders Events Centre in Kelso’s Springwood Park for this year’s Borders College graduation ceremony.",
-                "This year’s ceremony took place at the Borders Events Centre in Kelso. A day described by the Chair of the Regional Board for Borders College, Tony Jakimciw, as “the best day of the College year”. This year’s ceremony, which saw in the region of 160 graduands cross the stage to receive their education awards, had a real air of celebration and fun, even including a selfie booth for guests to enjoy after the formal proceedings had taken place." +
-                        + "College Principal Angela Cox congratulated all graduands and encouraged them to reflect on their studies and be resilient in whatever they do. Angela also presented this year’s Honorary Fellowship to Nick Bannerman from Hawick, known for his role in the local textile industry.",
+                "This year’s ceremony took place at the Borders Events Centre in Kelso. " + "A day described by the Chair of the Regional" +
+                        "Board for Borders College, Tony Jakimciw, as the best day of the College year"+
+                "This year’s ceremony, which saw in the region of 160 graduands cross the stage to receive their education awards, " +
+                        "had a real air of celebration and fun, even including a selfie booth for guests to enjoy after the formal " +
+                        "proceedings had taken place." + "College Principal Angela Cox congratulated all graduands and encouraged them " +
+                        "to reflect on their studies and be resilient in whatever they do. Angela also presented this year’s Honorary " +
+                        "Fellowship to Nick Bannerman from Hawick, known for his role in the local textile industry.",
                 journalist4,
                 "http://www.borderscollege.ac.uk/upload/image/Sept19News/DSC_8530%20(Medium).JPG"
         );
@@ -197,7 +202,7 @@ public class DataLoader implements ApplicationRunner {
         article7.addCategory(category8);
         article7.addCategory(category6);
         articleRepository.save(article7);
-        
+
         article8.addCategory(category10);
         articleRepository.save(article8);
     }
