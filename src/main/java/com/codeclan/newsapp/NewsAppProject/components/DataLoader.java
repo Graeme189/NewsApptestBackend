@@ -146,6 +146,27 @@ public class DataLoader implements ApplicationRunner {
         );
         articleRepository.save(article6);
 
+        Article article7 = new Article(
+                "Iomart says market for cloud computing 'large and long-term",
+                5,
+                "Cloud computing and web hosting company Iomart said the market opportunity for the business “remains large and long-term” as the Glasgow-based group updated investors on recent trading.",
+                "Releasing a trading statement for the six months to the end of September, the firm noted that overall revenue growth was in line with expectations, with “good visibility” heading into the second half of the year." + "Iomart, which in June reported that annual revenues had surpassed £100 million for the first time, said that a reorganisation of its commercial operations was now starting to deliver more new customer wins and a 'stronger pipeline of opportunities'",
+                journalist6,
+                "https://images-e.jpimedia.uk/imagefetch/w_700,f_auto,ar_3:2,q_auto:low,c_fill/if_h_lte_200,c_mfit,h_201/https://www.scotsman.com/webimage/1.5014809.1569919499!/image/image.jpg"
+        );
+        articleRepository.save(article7);
+
+        Article article8 = new Article(
+                "Borders College students celebrate at graduation ceremony",
+                2,
+                "More than 160 graduates gathered at the Borders Events Centre in Kelso’s Springwood Park for this year’s Borders College graduation ceremony.",
+                "This year’s ceremony took place at the Borders Events Centre in Kelso. A day described by the Chair of the Regional Board for Borders College, Tony Jakimciw, as “the best day of the College year”. This year’s ceremony, which saw in the region of 160 graduands cross the stage to receive their education awards, had a real air of celebration and fun, even including a selfie booth for guests to enjoy after the formal proceedings had taken place." +
+                        + "College Principal Angela Cox congratulated all graduands and encouraged them to reflect on their studies and be resilient in whatever they do. Angela also presented this year’s Honorary Fellowship to Nick Bannerman from Hawick, known for his role in the local textile industry.",
+                journalist4,
+                "http://www.borderscollege.ac.uk/upload/image/Sept19News/DSC_8530%20(Medium).JPG"
+        );
+        articleRepository.save(article8);
+
 
 
 
@@ -172,6 +193,13 @@ public class DataLoader implements ApplicationRunner {
 
         article6.addCategory(category3);
         articleRepository.save(article6);
+
+        article7.addCategory(category8);
+        article7.addCategory(category6);
+        articleRepository.save(article7);
+        
+        article8.addCategory(category10);
+        articleRepository.save(article8);
     }
 }
 
