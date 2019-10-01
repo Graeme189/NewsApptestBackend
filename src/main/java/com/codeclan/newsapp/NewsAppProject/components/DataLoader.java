@@ -81,7 +81,12 @@ public class DataLoader implements ApplicationRunner {
                 3,
                 "A bad week for bitcoin investors just got worse. First, there was the crash, and now a threat to wallets has been identified.",
                 "First bitcoin crashes and then more bad news is piled onto cryptocurrency investors Bitcoin wentinto" +
-                        " meltdown starting September 24 when the BTC price dropped by",
+                        " meltdown starting September 24 when the BTC price dropped by more than 10% " +
+                        " in what some highly-respected commentators referred to as a bitcoin crash. " +
+                        "The bad news for bitcoin continued through the week, with the price continuing " +
+                        "to fluctuate around, and below, $8,000 (£6,500). Now bitcoin buyers have been " +
+                        "issued a warning concerning another threat to their cryptocurrency investment; " +
+                        "an active and ongoing threat campaign that steals bitcoin wallets.",
                 journalist1,
                 "https://thumbor.forbes.com/thumbor/600x315/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F976598338%2F960x0.jpg");
         articleRepository.save(article1);
@@ -90,13 +95,20 @@ public class DataLoader implements ApplicationRunner {
                 "Crypto Exchange Coindirect Launches OTC Brokerage in South Africa",
                 4,
                 "Cryptocurrency exchange Coindirect launches an over-the-counter brokerage service in South Africa",
-                "Cryptocurrency exchange Coindirect launches an over-the-counter (OTC) brokerage in South Africa" +
-                        "Coindirect cryptocurrency exchange has launched an over-the-counter (OTC) brokerage system that targets large volume traders. The service was launched for South Africa, " +
+                "Cryptocurrency exchange Coindirect launches an over-the-counter (OTC) brokerage in South Africa " +
+                        "Coindirect cryptocurrency exchange has launched an over-the-counter (OTC) brokerage system that targets " +
+                        "large volume traders. The service was launched for South Africa, " +
                         "with the exchange promising its traders the lowest fees and the best prices." +
-                        "The decision to launch the OTC desk was informed by extensive research conducted by the firm, the exchange’s COO Nic Haralambous stated in a press release:" +
-                         "During our first two years in the industry we have paid close attention to which users are driving the volume of crypto trading." +  "Our approach is to bring cryptocurrency to as many users as possible, however, " + "the data shows that a majority of the daily trading volume in South Africa right now comes " +
-                        "from a very small percentage of traders."+ "This group of traders spends a lot of time conducting research so that they can make their trades at the lowest fees and best prices, he went on. The new service will solve both of these challenges for the traders. " +
-                        "Coindirect will use global integrations to create a wide pool of liquidity sources that will enable a best price guarantee. ",
+                        "The decision to launch the OTC desk was informed by extensive research conducted" +
+                        " by the firm, the exchange’s COO Nic Haralambous stated in a press release: " +
+                        " During our first two years in the industry we have paid close attention " +
+                        "to which users are driving the volume of crypto trading." +
+                        " Our approach is to bring cryptocurrency to as many users as possible," +
+                        " however, " + "the data shows that a majority of the daily trading volume in South Africa right now comes " +
+                        "from a very small percentage of traders." + " This group of traders spends a lot of time " +
+                        "conducting research so that they can make their trades at the lowest fees and best prices, he went on. " +
+                        " The new service will solve both of these challenges for the traders. " +
+                        " Coindirect will use global integrations to create a wide pool of liquidity sources that will enable a best price guarantee. ",
                 journalist2,
                 "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9iNTI5MGI0NTE4ZjY0ZTc5MTI1YWRkNzYzMTYxOWIwNS5qcGc=.jpg"
         );
@@ -166,7 +178,12 @@ public class DataLoader implements ApplicationRunner {
                 "Iomart says market for cloud computing 'large and long-term",
                 5,
                 "Cloud computing and web hosting company Iomart said the market opportunity for the business “remains large and long-term” as the Glasgow-based group updated investors on recent trading.",
-                "Releasing a trading statement for the six months to the end of September, the firm noted that overall revenue growth was in line with expectations, with “good visibility” heading into the second half of the year." + "Iomart, which in June reported that annual revenues had surpassed £100 million for the first time, said that a reorganisation of its commercial operations was now starting to deliver more new customer wins and a 'stronger pipeline of opportunities'",
+                "Releasing a trading statement for the six months to the end of September, the firm noted that overall revenue growth was in line with expectations, with 'good visibility'" +
+                        " heading into the second half of the year." +
+                        "Iomart, which in June reported that annual " +
+                        "revenues had surpassed £100 million for the first time, " +
+                        "said that a reorganisation of its commercial operations " +
+                        "was now starting to deliver more new customer wins and a 'stronger pipeline of opportunities'. ",
                 journalist6,
                 "https://images-e.jpimedia.uk/imagefetch/w_700,f_auto,ar_3:2,q_auto:low,c_fill/if_h_lte_200,c_mfit,h_201/https://www.scotsman.com/webimage/1.5014809.1569919499!/image/image.jpg"
         );
