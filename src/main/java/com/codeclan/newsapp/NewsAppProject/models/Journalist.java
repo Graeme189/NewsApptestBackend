@@ -27,7 +27,8 @@ public class Journalist {
     public Journalist(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
-        // this.articles = new ArrayList<>;
+        // this.articles = new ArrayList<>(;
+
     }
 
     public Journalist() {
@@ -64,4 +65,6 @@ public class Journalist {
     public void setArticles(List<Article> articles) {
         this.articles = articles;
     }
+
+
 }
