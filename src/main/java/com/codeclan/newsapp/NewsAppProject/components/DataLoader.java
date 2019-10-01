@@ -91,9 +91,15 @@ public class DataLoader implements ApplicationRunner {
                 4,
                 "Cryptocurrency exchange Coindirect launches an over-the-counter brokerage service in South Africa",
                 "Cryptocurrency exchange Coindirect launches an over-the-counter (OTC) brokerage in South Africa" +
-                        "As industry news outlet CoinInsider reported on Sept. 27, the platform creates a vast liquidity pool by integrating with global platforms, allows for Bitcoin (BT… [+932 chars]",
+                        "Coindirect cryptocurrency exchange has launched an over-the-counter (OTC) brokerage system that targets large volume traders. The service was launched for South Africa, " +
+                        "with the exchange promising its traders the lowest fees and the best prices." +
+                        "The decision to launch the OTC desk was informed by extensive research conducted by the firm, the exchange’s COO Nic Haralambous stated in a press release:" +
+                         "During our first two years in the industry we have paid close attention to which users are driving the volume of crypto trading." +  "Our approach is to bring cryptocurrency to as many users as possible, however, " + "the data shows that a majority of the daily trading volume in South Africa right now comes " +
+                        "from a very small percentage of traders."+ "This group of traders spends a lot of time conducting research so that they can make their trades at the lowest fees and best prices, he went on. The new service will solve both of these challenges for the traders. " +
+                        "Coindirect will use global integrations to create a wide pool of liquidity sources that will enable a best price guarantee. ",
                 journalist2,
-                "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9iNTI5MGI0NTE4ZjY0ZTc5MTI1YWRkNzYzMTYxOWIwNS5qcGc=.jpg");
+                "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy9iNTI5MGI0NTE4ZjY0ZTc5MTI1YWRkNzYzMTYxOWIwNS5qcGc=.jpg"
+        );
         articleRepository.save(article2);
 
         Article article3 = new Article(
@@ -102,7 +108,10 @@ public class DataLoader implements ApplicationRunner {
                 "COINCOLA CRYPTO TOUR NIGERIA The digital currency sphere has experienced significant growth in " +
                         "Africa over the past 10 years. This growth is largely catalyzed by a user base under age 40. CoinCola is at the forefront of the digital currency peer-to-peer marke…",
                 "COINCOLA CRYPTO COINCOLA CRYPTO TOUR NIGERIA The digital currency sphere has experienced " +
-                        "significant growth in Africa over the past 10 years. This growth is largely catalyzed by a user base under age 40. CoinCola is at the forefront of the digital currency… [+4868 chars]",
+                        "significant growth in Africa over the past 10 years."+
+                "It went from a hype to a relevant and ever-present interest. Cryptocurrency interests as a form of digital currency has experienced consistent growth across Africa. This innovation perceived as highly disruptive by some schools of thought has taken a stronghold " +
+                        "on the continent." + "Owing to its database storage (blockchain) and free geographical freedom as an internet-based ecosystem, cryptocurrency is up for more positive adoption by the young crowd who currently make up a major part of Africa’s young population."
+                         + "Read more at" + " https://www.vanguardngr.com/2019/09/coincola-leading-the-digital-currency-education-across-africa/",
                 journalist3,
                 "https://i2.wp.com/cdn.vanguardngr.com/wp-content/uploads/2019/09/IMG-20190927-WA0001" +
                         ".jpg?fit=1080%2C1080&ssl=1"
@@ -116,7 +125,14 @@ public class DataLoader implements ApplicationRunner {
                         "following a minor rebound to $8,200",
                 "Subsequent to the recovery of the Bitcoin price (BTC) movement from $7,700 to around $8,200 in the " +
                         "past 24 hours, technical analysts anticipate Bitcoin and other major crypto assets to " +
-                        "recover in the short term. Speaking to Cointelegraph, crypto trader Nick … [+9284 chars]",
+                        "recover in the short term. Speaking to Cointelegraph, crypto trader Nick " +
+                        "said that there are plenty of times when the price history was at $7,600, which is likely to hold as a level of strong support " +
+                        "for traders in the upcoming days. Technical analysts remain divided on the Bitcoin price trend and the rest of the crypto market, but most generally " +
+                        "agree that there is strong demand to buy BTC in the mid-$6,000 to $7,000 region." +
+                        "According to Rager, the sell-off of Bitcoin in recent weeks was triggered by holders of newly acquired BTC, indicating that investors with a long-term thesis, known as “hodlers,” did not capitulate as a cascade of long " +
+                        "contract liquidations on BitMEX, which intensified the downward movement." +
+                        "When Bitcoin’s price initially fell below $9,000, crypto data aggregator Datamish showed that more than $650 million worth of long contracts on BitMEX were liquidated. In the days that followed — especially" +
+                        " as BTC dropped below $8,000 — upward of $100 million worth of long contracts were liquidated, bringing the total to about $750 million.",
                 journalist4,
                 "https://images.cointelegraph.com/images/740_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy80NTcxOGYzODBjZmIxNmQ0YjQ1OWQ0MTBlZmNlZDc3YS5qcGc=.jpg"
         );
