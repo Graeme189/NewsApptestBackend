@@ -14,6 +14,9 @@ public interface EmbedCategoryForArticle {
     public String getSummary();
     public String getContent();
     public List<Category> getCategories();
+    public Journalist getJournalist();
     public String getPicUrl();
+    public Long getId();
+
 }
 

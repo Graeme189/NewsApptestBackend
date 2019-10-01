@@ -10,4 +10,5 @@ import java.util.List;
 public interface EmbedAllForCategories {
     public String getName();
     public List<Article> getArticles();
+    public Long getId();
 }

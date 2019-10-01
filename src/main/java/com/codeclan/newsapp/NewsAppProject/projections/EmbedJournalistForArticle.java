@@ -15,5 +15,5 @@ public interface EmbedJournalistForArticle {
     public Journalist getJournalist();
     public List<Category> getCategories();
     public String getPicUrl();
-
+    public Long getId();
 }
