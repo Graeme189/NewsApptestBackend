@@ -40,6 +40,12 @@ public class DataLoader implements ApplicationRunner {
         Journalist journalist4 = new Journalist( "Catriona", "Shearer");
         journalistRepository.save(journalist4);
 
+        Journalist journalist5 = new Journalist( "Eva", "White");
+        journalistRepository.save(journalist5);
+
+        Journalist journalist6 = new Journalist( "Chris", "Iron");
+        journalistRepository.save(journalist6);
+
         Category category1 = new Category("Politics");
         categoryRepository.save(category1);
 
@@ -52,6 +58,23 @@ public class DataLoader implements ApplicationRunner {
         Category category4 = new Category("Science");
         categoryRepository.save(category4);
 
+        Category category5 = new Category("Entertainment");
+        categoryRepository.save(category5);
+
+        Category category6 = new Category("Tech");
+        categoryRepository.save(category6);
+
+        Category category7 = new Category("Health");
+        categoryRepository.save(category7);
+
+        Category category8 = new Category("Business");
+        categoryRepository.save(category8);
+
+        Category category9 = new Category("Crime");
+        categoryRepository.save(category9);
+
+        Category category10 = new Category("Education");
+        categoryRepository.save(category10);
 
         Article article1 = new Article(
                 "Post-Crash Bitcoin Warning As Wallets Targeted In ‘Active And Ongoing’ Hack Attack",
@@ -99,6 +122,34 @@ public class DataLoader implements ApplicationRunner {
         );
         articleRepository.save(article4);
 
+
+        Article article5 =  new Article(
+                "Adele 'dating Grime star Skepta' after marriage split from Simon Konecki",
+                4,
+                "Adele, 31, is reportedly dating Grime artist Skepta, 37, following the breakdown of her marriage with Simon Konecki, friends of the pair are reportedly 'hoping' they become a 'great couple.",
+                "A source revealed to the publication: 'Adele and Skepta have been there for each other a lot after both their relationships split up. They have a close bond and there’s definitely a special connection."+
+                "The insider added: 'They are both private about their love lives and they are both committed to their children first and foremost as well."+
+                "Adele shares a son, Angelo, with Simon while Skepta - real name Joseph Junior Adenuga Jr - became a father in Novemeber.",
+                journalist5,
+                "https://i.dailymail.co.uk/1s/2019/10/01/08/19142910-0-image-a-9_1569914051456.jpg"
+        );
+        articleRepository.save(article5);
+
+        Article article6 = new Article(
+                "Why hydrogen is NOT the fuel of the future – Dr Richard Dixon",
+                 3,
+                "As Scotland seeks to reduce climate emissions even faster than before, we are in serious danger of taking the wrong road, writes Dr Richard Dixon.",
+                "Last week’s vote on the Climate Bill saw a welcome increase in Scotland’s short-term target to a 75 per cent reduction by 2030. This was a huge success for the 40,000 people in Scotland who marched and rallied on the streets the Friday before." +
+                        "Now that we have agreed the new targets, the Climate Change Plan will be thoroughly revised by the spring of next year. In parallel, the Scottish Government will revise its Energy Strategy." + "We have a target of 100 per cent of the electricity we use in Scotland to come from renewables by 2020.",
+                journalist6,
+                "https://images-e.jpimedia.uk/imagefetch/w_700,f_auto,ar_3:2,q_auto:low,c_fill/if_h_lte_200,c_mfit,h_201/https://www.scotsman.com/webimage/1.5014568.1569860287!/image/image.jpg"
+        );
+        articleRepository.save(article6);
+
+
+
+
+
         article1.addCategory(category1);
         article1.addCategory(category2);
         articleRepository.save(article1);
@@ -115,6 +166,12 @@ public class DataLoader implements ApplicationRunner {
 
         article4.addCategory(category4);
         articleRepository.save(article4);
+
+        article5.addCategory(category5);
+        articleRepository.save(article5);
+
+        article6.addCategory(category3);
+        articleRepository.save(article6);
     }
 }
 
