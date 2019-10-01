@@ -173,7 +173,30 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(article8);
 
 
-
+        Article article9 = new Article(
+                "Concerns raised over surgeon after 'below standard' operation",
+                1,
+                "The General Medical Council should be made aware of concerns about a surgeon who carried out an operation which went wrong, a report has said.",
+                "The Scottish Public Services Ombudsman said the problem could have been avoided if the surgeon had exercised reasonable skill and care." +
+                        "It followed a complaint from a patient at Monklands University Hospital in Lanarkshire." +
+                        "" +
+                        "The woman said she had not been told of serious risks in the procedure." +
+                        "" +
+                        "NHS Lanarkshire said it had apologised to the patient, and was implementing the recommendations made by the ombudsman."+
+                        "The patient, known only as Ms C, suffered a major vascular injury during an operation to remove her gallbladder."
+                         + "She became unstable in recovery and needed to return to theatre for open surgery to repair tears in her bowel and an artery" +
+                        "She required a large blood transfusion" + "Ms C said she had been told " +
+                        "the procedure was a simple keyhole operation, but had received no explanation of the small risk of major vascular injury, "
+                        + "or what actions would have been necessary in the event of a serious complication."
+                         +"The ombudsman, Rosemary Agnew, upheld her complaint." +
+                        "Ms C also complained about the mistake made during her surgery." +
+                         "The ombudsman's report said: 'We considered that the major vascular injury could have been avoided if the operating surgeon'" +
+                        " had exercised reasonable skill and care." + "In technical delivery, decision-making and note-keeping, the surgical care provided during the operation fell seriously below " +
+                        "the standard we would expect of a reasonably competent consultant general surgeon.",
+                journalist1,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/B5D1/production/_108854564_operation_getty.jpg"
+        );
+        articleRepository.save(article9);
 
 
         article1.addCategory(category1);
@@ -182,7 +205,6 @@ public class DataLoader implements ApplicationRunner {
 
         //article1.addCategory(category2);
         //articleRepository.save(article1);
-
 
         article2.addCategory(category3);
         articleRepository.save(article2);
@@ -205,6 +227,9 @@ public class DataLoader implements ApplicationRunner {
 
         article8.addCategory(category10);
         articleRepository.save(article8);
+
+        article9.addCategory(category7);
+        articleRepository.save(article9);
     }
 }
 
