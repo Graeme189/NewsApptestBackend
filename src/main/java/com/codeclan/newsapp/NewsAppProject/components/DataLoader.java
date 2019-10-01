@@ -198,6 +198,31 @@ public class DataLoader implements ApplicationRunner {
         );
         articleRepository.save(article9);
 
+        Article article10 =  new Article(
+                "Woman dies after being struck by lightning while hiking in Scottish Highlands",
+                4,
+                "A woman who died after being struck by lightning while walking on a mountain range in the Scottish Highlands has been named as Isobel Bytautas.",
+                "The 55-year-old was hiking near Glencoe on Saturday evening when she and another member of her walking group were hit." +
+                        "Police Scotland said both walkers were airlifted to a hospital in Fort William, but one died from her injuries. The other walker is in a stable condition." +
+                        "Ms Bytautas’ next of kin have been informed." +
+                        "Coastguard and ambulance service helicopters, alongside the Glencoe Mountain Rescue Team, were dispatched to find the wounded group. They were located on Na Gruagaichean, a mountain about five miles south of Ben Nevis.",
+                journalist2,
+                "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/06/09/12/isobel-bytautas-hiker.jpg?w968"
+        );
+        articleRepository.save(article10);
+
+        Article article11 = new Article(
+                "Brexit: Boris Johnson’s ‘reckless’ plan for Irish border prompts outrage",
+                7,
+                "There is near-unanimous political outrage in Ireland over a leaked British government plan to throw up a “buffer zone” with customs posts on the Irish border",
+                "Parties across the political spectrum branded it 'out of the question'." + "Secret proposals presented to Brussels suggested building vast'customs processing centres' " + "along the frontier as a replacement for the Brexit backstop." + "Irish public broadcaster RTE reports that the plan was included in “non-papers” presented to Commission negotiators." +
+                 "The ideas represent a significant reversal by the UK government on commitments made under Theresa May to avoid “checks and controls” " + "between the two territories to preserve the Northern Ireland peace process."+ "Ireland’s foreign minister Simon Coveney said that the proposals were a “non-starter”. + “Time the EU had a serious proposal " +
+                        "from the UK government if a Brexit deal is to be achievable in October. Northern Ireland and Ireland deserves better!” he tweeted.",
+                journalist3,
+                "https://static.independent.co.uk/s3fs-public/thumbnails/image/2019/09/30/13/tory-conference-merchandise-12.jpg?width=1368&height=912&fit=bounds&format=pjpg&auto=webp&quality=70"
+        );
+        articleRepository.save(article11);
+
 
         article1.addCategory(category1);
         article1.addCategory(category2);
@@ -230,6 +255,14 @@ public class DataLoader implements ApplicationRunner {
 
         article9.addCategory(category7);
         articleRepository.save(article9);
+
+        article10.addCategory(category9);
+        articleRepository.save(article10);
+
+        article11.addCategory(category1);
+        article11.addCategory(category8);
+        articleRepository.save(article11);
+
     }
 }
 
