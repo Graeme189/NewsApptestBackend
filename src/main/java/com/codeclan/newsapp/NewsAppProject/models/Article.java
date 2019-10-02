@@ -1,6 +1,7 @@
 package com.codeclan.newsapp.NewsAppProject.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.Type;
 
@@ -40,7 +41,7 @@ public class Article {
     private String picUrl;
 
 
-    @JsonIgnore
+    @JsonIgnoreProperties("journalist")
     @ManyToOne
     @JoinColumn(name = "journalist_id", nullable = false)
     private Journalist journalist;
